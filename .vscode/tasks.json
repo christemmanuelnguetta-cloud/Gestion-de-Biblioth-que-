@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "BiblioIIT : lancer l'application",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["main.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "focus": true, "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "BiblioIIT : lancer les tests",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "pytest", "-v"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "panel": "dedicated" },
+      "problemMatcher": []
+    }
+  ]
+}

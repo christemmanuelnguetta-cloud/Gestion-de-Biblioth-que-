@@ -1,0 +1,16 @@
+# Environnement virtuel
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Base de données locale (recréée automatiquement)
+donnees/*.db
+
+# Éditeurs / système
+.idea/
+Thumbs.db
+.DS_Store
